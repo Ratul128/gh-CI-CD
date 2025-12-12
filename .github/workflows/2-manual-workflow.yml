@@ -1,0 +1,14 @@
+name: Manual Workflow
+
+on :
+  workflow_dispatch
+
+jobs:
+  first-manual-workflow:
+    runs-on: macos-latest
+
+    steps:
+      - name : First manual step
+        run: |
+          echo "Hlw world, manual"
+          echo "Hle again, manual"
